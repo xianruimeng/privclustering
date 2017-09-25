@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\container">
+      <UniqueIdentifier>{b049935d-18a9-46a2-8d26-e7a0c66e121f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cluster">
+      <UniqueIdentifier>{cc2cb47d-4c92-4c11-82a5-9d78abf6ebf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tsp">
+      <UniqueIdentifier>{b6c60a7c-ec29-4363-a123-f210e0eea235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\nnet">
+      <UniqueIdentifier>{749e2e3a-5a11-4f48-93bf-20968207d439}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\differential">
+      <UniqueIdentifier>{3f3cff3c-f601-4c65-b7ac-a1b129961edf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\interface">
+      <UniqueIdentifier>{5a874dd2-576d-4bcf-b7d4-6a05ffc32138}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cluster\agglomerative.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\cure.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\dbscan.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\hsyncnet.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\kmeans.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\kmedians.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\rock.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\syncnet.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\xmeans.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="container\adjacency_bit_matrix.cpp">
+      <Filter>Source Files\container</Filter>
+    </ClCompile>
+    <ClCompile Include="container\adjacency_connector.cpp">
+      <Filter>Source Files\container</Filter>
+    </ClCompile>
+    <ClCompile Include="container\adjacency_factory.cpp">
+      <Filter>Source Files\container</Filter>
+    </ClCompile>
+    <ClCompile Include="container\adjacency_list.cpp">
+      <Filter>Source Files\container</Filter>
+    </ClCompile>
+    <ClCompile Include="container\adjacency_matrix.cpp">
+      <Filter>Source Files\container</Filter>
+    </ClCompile>
+    <ClCompile Include="container\adjacency_weight_list.cpp">
+      <Filter>Source Files\container</Filter>
+    </ClCompile>
+    <ClCompile Include="container\kdtree.cpp">
+      <Filter>Source Files\container</Filter>
+    </ClCompile>
+    <ClCompile Include="nnet\legion.cpp">
+      <Filter>Source Files\nnet</Filter>
+    </ClCompile>
+    <ClCompile Include="nnet\pcnn.cpp">
+      <Filter>Source Files\nnet</Filter>
+    </ClCompile>
+    <ClCompile Include="nnet\som.cpp">
+      <Filter>Source Files\nnet</Filter>
+    </ClCompile>
+    <ClCompile Include="nnet\sync.cpp">
+      <Filter>Source Files\nnet</Filter>
+    </ClCompile>
+    <ClCompile Include="nnet\syncpr.cpp">
+      <Filter>Source Files\nnet</Filter>
+    </ClCompile>
+    <ClCompile Include="tsp\ant_colony.cpp">
+      <Filter>Source Files\tsp</Filter>
+    </ClCompile>
+    <ClCompile Include="tsp\distance_matrix.cpp">
+      <Filter>Source Files\tsp</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="differential\differ_factor.cpp">
+      <Filter>Source Files\differential</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\cluster_algorithm.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\cluster_data.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\kmedoids.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\pcnn_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\pyclustering_package.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\agglomerative_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\cure_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\dbscan_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\kmedians_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\rock_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\kmedoids_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\kmeans_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\som_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\optics.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\optics_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\ordering_analyser.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\xmeans_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\sync_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\pyclustering_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\syncpr_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\antmean_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\antmean.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\legion_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\syncnet_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\hsyncnet_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\antcolony_tsp_interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cluster\agglomerative.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\cure.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\dbscan.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\hsyncnet.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\kmeans.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\kmedians.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\rock.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\syncnet.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\xmeans.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="container\adjacency.hpp">
+      <Filter>Source Files\container</Filter>
+    </ClInclude>
+    <ClInclude Include="container\adjacency_bit_matrix.hpp">
+      <Filter>Source Files\container</Filter>
+    </ClInclude>
+    <ClInclude Include="container\adjacency_connector.hpp">
+      <Filter>Source Files\container</Filter>
+    </ClInclude>
+    <ClInclude Include="container\adjacency_factory.hpp">
+      <Filter>Source Files\container</Filter>
+    </ClInclude>
+    <ClInclude Include="container\adjacency_list.hpp">
+      <Filter>Source Files\container</Filter>
+    </ClInclude>
+    <ClInclude Include="container\adjacency_matrix.hpp">
+      <Filter>Source Files\container</Filter>
+    </ClInclude>
+    <ClInclude Include="container\adjacency_weight_list.hpp">
+      <Filter>Source Files\container</Filter>
+    </ClInclude>
+    <ClInclude Include="container\dynamic_data.hpp">
+      <Filter>Source Files\container</Filter>
+    </ClInclude>
+    <ClInclude Include="container\ensemble_data.hpp">
+      <Filter>Source Files\container</Filter>
+    </ClInclude>
+    <ClInclude Include="container\kdtree.hpp">
+      <Filter>Source Files\container</Filter>
+    </ClInclude>
+    <ClInclude Include="nnet\legion.hpp">
+      <Filter>Source Files\nnet</Filter>
+    </ClInclude>
+    <ClInclude Include="nnet\network.hpp">
+      <Filter>Source Files\nnet</Filter>
+    </ClInclude>
+    <ClInclude Include="nnet\pcnn.hpp">
+      <Filter>Source Files\nnet</Filter>
+    </ClInclude>
+    <ClInclude Include="nnet\som.hpp">
+      <Filter>Source Files\nnet</Filter>
+    </ClInclude>
+    <ClInclude Include="nnet\sync.hpp">
+      <Filter>Source Files\nnet</Filter>
+    </ClInclude>
+    <ClInclude Include="nnet\syncpr.hpp">
+      <Filter>Source Files\nnet</Filter>
+    </ClInclude>
+    <ClInclude Include="tsp\ant_colony.hpp">
+      <Filter>Source Files\tsp</Filter>
+    </ClInclude>
+    <ClInclude Include="tsp\ant_colony_params.hpp">
+      <Filter>Source Files\tsp</Filter>
+    </ClInclude>
+    <ClInclude Include="tsp\distance_matrix.hpp">
+      <Filter>Source Files\tsp</Filter>
+    </ClInclude>
+    <ClInclude Include="tsp\params_container.hpp">
+      <Filter>Source Files\tsp</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="differential\differ_factor.hpp">
+      <Filter>Source Files\differential</Filter>
+    </ClInclude>
+    <ClInclude Include="differential\differ_state.hpp">
+      <Filter>Source Files\differential</Filter>
+    </ClInclude>
+    <ClInclude Include="differential\runge_kutta_4.hpp">
+      <Filter>Source Files\differential</Filter>
+    </ClInclude>
+    <ClInclude Include="differential\runge_kutta_fehlberg_45.hpp">
+      <Filter>Source Files\differential</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\cluster_algorithm.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\cluster_data.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\kmedoids_data.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\kmedoids.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="definitions.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\pcnn_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\pyclustering_package.hpp">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\cure_data.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\dbscan_data.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\kmedians_data.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\agglomerative_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\cure_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\dbscan_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\kmedians_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\rock_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\kmedoids_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\kmeans_data.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\kmeans_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\som_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\optics.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\optics_data.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\optics_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\ordering_analyser.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\xmeans_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\xmeans_data.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\sync_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\pyclustering_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\syncpr_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\antmean_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\antmean.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\antmean_params.hpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\legion_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\syncnet_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\hsyncnet_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\antcolony_tsp_interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

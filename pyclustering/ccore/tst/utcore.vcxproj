@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8075CCCA-4283-485B-9D76-80AFE5987A3A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>utcore</RootNamespace>
+    <ProjectName>utcore</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>../src;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>../src;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)tools\;$(SolutionDir)tools\gtest\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)tools\;$(SolutionDir)tools\gtest\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\cluster\agglomerative.cpp" />
+    <ClCompile Include="..\src\cluster\antmean.cpp" />
+    <ClCompile Include="..\src\cluster\cluster_algorithm.cpp" />
+    <ClCompile Include="..\src\cluster\cluster_data.cpp" />
+    <ClCompile Include="..\src\cluster\cure.cpp" />
+    <ClCompile Include="..\src\cluster\dbscan.cpp" />
+    <ClCompile Include="..\src\cluster\hsyncnet.cpp" />
+    <ClCompile Include="..\src\cluster\kmeans.cpp" />
+    <ClCompile Include="..\src\cluster\kmedians.cpp" />
+    <ClCompile Include="..\src\cluster\kmedoids.cpp" />
+    <ClCompile Include="..\src\cluster\optics.cpp" />
+    <ClCompile Include="..\src\cluster\ordering_analyser.cpp" />
+    <ClCompile Include="..\src\cluster\rock.cpp" />
+    <ClCompile Include="..\src\cluster\somsc.cpp" />
+    <ClCompile Include="..\src\cluster\syncnet.cpp" />
+    <ClCompile Include="..\src\cluster\xmeans.cpp" />
+    <ClCompile Include="..\src\container\adjacency_bit_matrix.cpp" />
+    <ClCompile Include="..\src\container\adjacency_connector.cpp" />
+    <ClCompile Include="..\src\container\adjacency_factory.cpp" />
+    <ClCompile Include="..\src\container\adjacency_list.cpp" />
+    <ClCompile Include="..\src\container\adjacency_matrix.cpp" />
+    <ClCompile Include="..\src\container\adjacency_weight_list.cpp" />
+    <ClCompile Include="..\src\container\kdtree.cpp" />
+    <ClCompile Include="..\src\differential\differ_factor.cpp" />
+    <ClCompile Include="..\src\interface\agglomerative_interface.cpp" />
+    <ClCompile Include="..\src\interface\cure_interface.cpp" />
+    <ClCompile Include="..\src\interface\dbscan_interface.cpp" />
+    <ClCompile Include="..\src\interface\hsyncnet_interface.cpp" />
+    <ClCompile Include="..\src\interface\kmeans_interface.cpp" />
+    <ClCompile Include="..\src\interface\kmedians_interface.cpp" />
+    <ClCompile Include="..\src\interface\kmedoids_interface.cpp" />
+    <ClCompile Include="..\src\interface\legion_interface.cpp" />
+    <ClCompile Include="..\src\interface\pcnn_interface.cpp" />
+    <ClCompile Include="..\src\interface\pyclustering_interface.cpp" />
+    <ClCompile Include="..\src\interface\pyclustering_package.cpp" />
+    <ClCompile Include="..\src\interface\syncnet_interface.cpp" />
+    <ClCompile Include="..\src\interface\syncpr_interface.cpp" />
+    <ClCompile Include="..\src\interface\sync_interface.cpp" />
+    <ClCompile Include="..\src\interface\xmeans_interface.cpp" />
+    <ClCompile Include="..\src\nnet\legion.cpp" />
+    <ClCompile Include="..\src\nnet\pcnn.cpp" />
+    <ClCompile Include="..\src\nnet\som.cpp" />
+    <ClCompile Include="..\src\nnet\sync.cpp" />
+    <ClCompile Include="..\src\nnet\syncpr.cpp" />
+    <ClCompile Include="..\src\tsp\ant_colony.cpp" />
+    <ClCompile Include="..\src\tsp\distance_matrix.cpp" />
+    <ClCompile Include="..\src\utils.cpp" />
+    <ClCompile Include="..\tools\gtest\gtest-all.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="samples.cpp" />
+    <ClCompile Include="utest-adjacency.cpp" />
+    <ClCompile Include="utest-adjacency_bit_matrix.cpp" />
+    <ClCompile Include="utest-adjacency_connector.cpp" />
+    <ClCompile Include="utest-adjacency_list.cpp" />
+    <ClCompile Include="utest-adjacency_matrix.cpp" />
+    <ClCompile Include="utest-adjacency_weight_list.cpp" />
+    <ClCompile Include="utest-agglomerative.cpp" />
+    <ClCompile Include="utest-antmean.cpp" />
+    <ClCompile Include="utest-ant_colony.cpp" />
+    <ClCompile Include="utest-cluster.cpp" />
+    <ClCompile Include="utest-cure.cpp" />
+    <ClCompile Include="utest-dbscan.cpp" />
+    <ClCompile Include="utest-differential.cpp" />
+    <ClCompile Include="utest-hsyncnet.cpp" />
+    <ClCompile Include="utest-interface-agglomerative.cpp" />
+    <ClCompile Include="utest-interface-cure.cpp" />
+    <ClCompile Include="utest-interface-dbscan.cpp" />
+    <ClCompile Include="utest-interface-hsyncnet.cpp" />
+    <ClCompile Include="utest-interface-kmeans.cpp" />
+    <ClCompile Include="utest-interface-kmedians.cpp" />
+    <ClCompile Include="utest-interface-kmedoids.cpp" />
+    <ClCompile Include="utest-interface-legion.cpp" />
+    <ClCompile Include="utest-interface-pcnn.cpp" />
+    <ClCompile Include="utest-interface-syncnet.cpp" />
+    <ClCompile Include="utest-interface-syncpr.cpp" />
+    <ClCompile Include="utest-interface-xmeans.cpp" />
+    <ClCompile Include="utest-kdtree.cpp" />
+    <ClCompile Include="utest-kmeans.cpp" />
+    <ClCompile Include="utest-kmedians.cpp" />
+    <ClCompile Include="utest-kmedoids.cpp" />
+    <ClCompile Include="utest-legion.cpp" />
+    <ClCompile Include="utest-optics.cpp" />
+    <ClCompile Include="utest-ordering_analyser.cpp" />
+    <ClCompile Include="utest-pcnn.cpp" />
+    <ClCompile Include="utest-pyclustering.cpp" />
+    <ClCompile Include="utest-rock.cpp" />
+    <ClCompile Include="utest-som.cpp" />
+    <ClCompile Include="utest-somsc.cpp" />
+    <ClCompile Include="utest-interface-sync.cpp" />
+    <ClCompile Include="utest-sync.cpp" />
+    <ClCompile Include="utest-syncnet.cpp" />
+    <ClCompile Include="utest-syncpr.cpp" />
+    <ClCompile Include="utenv-utils.cpp" />
+    <ClCompile Include="utest-xmeans.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\cluster\agglomerative.hpp" />
+    <ClInclude Include="..\src\cluster\antmean.hpp" />
+    <ClInclude Include="..\src\cluster\antmean_params.hpp" />
+    <ClInclude Include="..\src\cluster\cluster_algorithm.hpp" />
+    <ClInclude Include="..\src\cluster\cluster_data.hpp" />
+    <ClInclude Include="..\src\cluster\cure.hpp" />
+    <ClInclude Include="..\src\cluster\cure_data.hpp" />
+    <ClInclude Include="..\src\cluster\dbscan.hpp" />
+    <ClInclude Include="..\src\cluster\dbscan_data.hpp" />
+    <ClInclude Include="..\src\cluster\hsyncnet.hpp" />
+    <ClInclude Include="..\src\cluster\kmeans.hpp" />
+    <ClInclude Include="..\src\cluster\kmeans_data.hpp" />
+    <ClInclude Include="..\src\cluster\kmedians.hpp" />
+    <ClInclude Include="..\src\cluster\kmedians_data.hpp" />
+    <ClInclude Include="..\src\cluster\kmedoids.hpp" />
+    <ClInclude Include="..\src\cluster\kmedoids_data.hpp" />
+    <ClInclude Include="..\src\cluster\optics.hpp" />
+    <ClInclude Include="..\src\cluster\optics_data.hpp" />
+    <ClInclude Include="..\src\cluster\ordering_analyser.hpp" />
+    <ClInclude Include="..\src\cluster\rock.hpp" />
+    <ClInclude Include="..\src\cluster\somsc.hpp" />
+    <ClInclude Include="..\src\cluster\somsc_data.hpp" />
+    <ClInclude Include="..\src\cluster\syncnet.hpp" />
+    <ClInclude Include="..\src\cluster\xmeans.hpp" />
+    <ClInclude Include="..\src\container\adjacency.hpp" />
+    <ClInclude Include="..\src\container\adjacency_bit_matrix.hpp" />
+    <ClInclude Include="..\src\container\adjacency_connector.hpp" />
+    <ClInclude Include="..\src\container\adjacency_factory.hpp" />
+    <ClInclude Include="..\src\container\adjacency_list.hpp" />
+    <ClInclude Include="..\src\container\adjacency_matrix.hpp" />
+    <ClInclude Include="..\src\container\adjacency_weight_list.hpp" />
+    <ClInclude Include="..\src\container\dynamic_data.hpp" />
+    <ClInclude Include="..\src\container\ensemble_data.hpp" />
+    <ClInclude Include="..\src\container\kdtree.hpp" />
+    <ClInclude Include="..\src\definitions.hpp" />
+    <ClInclude Include="..\src\differential\differ_factor.hpp" />
+    <ClInclude Include="..\src\differential\differ_state.hpp" />
+    <ClInclude Include="..\src\differential\runge_kutta_4.hpp" />
+    <ClInclude Include="..\src\differential\runge_kutta_fehlberg_45.hpp" />
+    <ClInclude Include="..\src\interface\agglomerative_interface.h" />
+    <ClInclude Include="..\src\interface\cure_interface.h" />
+    <ClInclude Include="..\src\interface\dbscan_interface.h" />
+    <ClInclude Include="..\src\interface\hsyncnet_interface.h" />
+    <ClInclude Include="..\src\interface\kmeans_interface.h" />
+    <ClInclude Include="..\src\interface\kmedians_interface.h" />
+    <ClInclude Include="..\src\interface\kmedoids_interface.h" />
+    <ClInclude Include="..\src\interface\legion_interface.h" />
+    <ClInclude Include="..\src\interface\pcnn_interface.h" />
+    <ClInclude Include="..\src\interface\pyclustering_interface.h" />
+    <ClInclude Include="..\src\interface\pyclustering_package.hpp" />
+    <ClInclude Include="..\src\interface\syncnet_interface.h" />
+    <ClInclude Include="..\src\interface\syncpr_interface.h" />
+    <ClInclude Include="..\src\interface\sync_interface.h" />
+    <ClInclude Include="..\src\interface\xmeans_interface.h" />
+    <ClInclude Include="..\src\nnet\legion.hpp" />
+    <ClInclude Include="..\src\nnet\network.hpp" />
+    <ClInclude Include="..\src\nnet\pcnn.hpp" />
+    <ClInclude Include="..\src\nnet\som.hpp" />
+    <ClInclude Include="..\src\nnet\sync.hpp" />
+    <ClInclude Include="..\src\nnet\syncpr.hpp" />
+    <ClInclude Include="..\src\tsp\ant_colony.hpp" />
+    <ClInclude Include="..\src\tsp\ant_colony_params.hpp" />
+    <ClInclude Include="..\src\tsp\distance_matrix.hpp" />
+    <ClInclude Include="..\src\tsp\params_container.hpp" />
+    <ClInclude Include="..\src\utils.hpp" />
+    <ClInclude Include="..\tools\gtest\gtest.h" />
+    <ClInclude Include="samples.hpp" />
+    <ClInclude Include="utest-adjacency.hpp" />
+    <ClInclude Include="utest-cluster.hpp" />
+    <ClInclude Include="utenv-utils.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

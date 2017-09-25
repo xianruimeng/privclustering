@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="TestEnv Source Files">
+      <UniqueIdentifier>{9c57f161-4c1e-4636-bce0-4c7f5277b6ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Unit Tests">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Tested Code">
+      <UniqueIdentifier>{4343b34d-feaf-4ef4-ad0f-fd895a07f7c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tested Code\container">
+      <UniqueIdentifier>{699d8c5c-9f08-4fb9-a3d9-e1b5e7679984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tested Code\cluster">
+      <UniqueIdentifier>{4babe04d-4ed0-479a-b15f-0e6656f21871}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tested Code\differential">
+      <UniqueIdentifier>{723ea346-3058-4760-aad3-db0d027c0821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tested Code\nnet">
+      <UniqueIdentifier>{27e24ed9-e9c4-43ab-ac00-726835a7e1be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tested Code\tsp">
+      <UniqueIdentifier>{0f0225d8-7891-4f28-88d6-240d7244d119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tested Code\interface">
+      <UniqueIdentifier>{5b5b6ac0-dc7c-434f-af9f-84ad933180f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\tools\gtest\gtest-all.cpp">
+      <Filter>TestEnv Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\container\adjacency_bit_matrix.cpp">
+      <Filter>Tested Code\container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\container\adjacency_connector.cpp">
+      <Filter>Tested Code\container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\container\adjacency_factory.cpp">
+      <Filter>Tested Code\container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\container\adjacency_list.cpp">
+      <Filter>Tested Code\container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\container\adjacency_matrix.cpp">
+      <Filter>Tested Code\container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\container\adjacency_weight_list.cpp">
+      <Filter>Tested Code\container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\container\kdtree.cpp">
+      <Filter>Tested Code\container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cluster\agglomerative.cpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cluster\kmedians.cpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cluster\syncnet.cpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cluster\xmeans.cpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\differential\differ_factor.cpp">
+      <Filter>Tested Code\differential</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\nnet\legion.cpp">
+      <Filter>Tested Code\nnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\nnet\pcnn.cpp">
+      <Filter>Tested Code\nnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\nnet\som.cpp">
+      <Filter>Tested Code\nnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\nnet\sync.cpp">
+      <Filter>Tested Code\nnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\nnet\syncpr.cpp">
+      <Filter>Tested Code\nnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tsp\ant_colony.cpp">
+      <Filter>Tested Code\tsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tsp\distance_matrix.cpp">
+      <Filter>Tested Code\tsp</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="samples.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cluster\hsyncnet.cpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils.cpp">
+      <Filter>Tested Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cluster\cluster_algorithm.cpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cluster\cluster_data.cpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cluster\kmedoids.cpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cluster\cure.cpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cluster\dbscan.cpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cluster\kmeans.cpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cluster\rock.cpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cluster\optics.cpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cluster\ordering_analyser.cpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cluster\somsc.cpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\interface\xmeans_interface.cpp">
+      <Filter>Tested Code\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\interface\pyclustering_package.cpp">
+      <Filter>Tested Code\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-adjacency.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-adjacency_bit_matrix.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-adjacency_connector.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-adjacency_list.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-adjacency_matrix.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-adjacency_weight_list.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-agglomerative.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-ant_colony.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-cluster.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-cure.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-dbscan.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-differential.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-hsyncnet.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-interface-xmeans.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-kdtree.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-kmeans.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-kmedians.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-kmedoids.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-legion.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-optics.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-ordering_analyser.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-pcnn.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-rock.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-som.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-somsc.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-sync.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-syncnet.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-syncpr.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-xmeans.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-pyclustering.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-interface-cure.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utenv-utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-interface-dbscan.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\interface\cure_interface.cpp">
+      <Filter>Tested Code\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\interface\dbscan_interface.cpp">
+      <Filter>Tested Code\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\interface\pyclustering_interface.cpp">
+      <Filter>Tested Code\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-interface-pcnn.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\interface\pcnn_interface.cpp">
+      <Filter>Tested Code\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\interface\agglomerative_interface.cpp">
+      <Filter>Tested Code\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-interface-agglomerative.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\interface\kmeans_interface.cpp">
+      <Filter>Tested Code\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-interface-kmeans.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-interface-syncpr.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\interface\syncpr_interface.cpp">
+      <Filter>Tested Code\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\interface\sync_interface.cpp">
+      <Filter>Tested Code\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cluster\antmean.cpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-antmean.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\interface\legion_interface.cpp">
+      <Filter>Tested Code\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-interface-legion.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\interface\kmedians_interface.cpp">
+      <Filter>Tested Code\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-interface-kmedians.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\interface\kmedoids_interface.cpp">
+      <Filter>Tested Code\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-interface-kmedoids.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\interface\syncnet_interface.cpp">
+      <Filter>Tested Code\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-interface-syncnet.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-interface-hsyncnet.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\interface\hsyncnet_interface.cpp">
+      <Filter>Tested Code\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="utest-interface-sync.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\tools\gtest\gtest.h">
+      <Filter>TestEnv Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\container\adjacency.hpp">
+      <Filter>Tested Code\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\container\adjacency_bit_matrix.hpp">
+      <Filter>Tested Code\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\container\adjacency_connector.hpp">
+      <Filter>Tested Code\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\container\adjacency_factory.hpp">
+      <Filter>Tested Code\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\container\adjacency_list.hpp">
+      <Filter>Tested Code\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\container\adjacency_matrix.hpp">
+      <Filter>Tested Code\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\container\adjacency_weight_list.hpp">
+      <Filter>Tested Code\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\container\dynamic_data.hpp">
+      <Filter>Tested Code\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\container\ensemble_data.hpp">
+      <Filter>Tested Code\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\container\kdtree.hpp">
+      <Filter>Tested Code\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\agglomerative.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\kmedians.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\syncnet.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\xmeans.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\differential\differ_factor.hpp">
+      <Filter>Tested Code\differential</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\differential\differ_state.hpp">
+      <Filter>Tested Code\differential</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\differential\runge_kutta_4.hpp">
+      <Filter>Tested Code\differential</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\differential\runge_kutta_fehlberg_45.hpp">
+      <Filter>Tested Code\differential</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\nnet\legion.hpp">
+      <Filter>Tested Code\nnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\nnet\network.hpp">
+      <Filter>Tested Code\nnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\nnet\pcnn.hpp">
+      <Filter>Tested Code\nnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\nnet\som.hpp">
+      <Filter>Tested Code\nnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\nnet\sync.hpp">
+      <Filter>Tested Code\nnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\nnet\syncpr.hpp">
+      <Filter>Tested Code\nnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tsp\ant_colony.hpp">
+      <Filter>Tested Code\tsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tsp\ant_colony_params.hpp">
+      <Filter>Tested Code\tsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tsp\distance_matrix.hpp">
+      <Filter>Tested Code\tsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tsp\params_container.hpp">
+      <Filter>Tested Code\tsp</Filter>
+    </ClInclude>
+    <ClInclude Include="samples.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\hsyncnet.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils.hpp">
+      <Filter>Tested Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\cluster_algorithm.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\cluster_data.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\kmedoids.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\kmedoids_data.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\definitions.hpp">
+      <Filter>Tested Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\cure.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\cure_data.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\dbscan.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\dbscan_data.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\kmeans.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\kmedians_data.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\rock.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\kmeans_data.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\optics_data.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\optics.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\ordering_analyser.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\somsc.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\somsc_data.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\interface\xmeans_interface.h">
+      <Filter>Tested Code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\interface\pyclustering_package.hpp">
+      <Filter>Tested Code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="utest-cluster.hpp">
+      <Filter>Unit Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="utest-adjacency.hpp">
+      <Filter>Unit Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="utenv-utils.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\interface\cure_interface.h">
+      <Filter>Tested Code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\interface\dbscan_interface.h">
+      <Filter>Tested Code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\interface\pyclustering_interface.h">
+      <Filter>Tested Code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\interface\pcnn_interface.h">
+      <Filter>Tested Code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\interface\agglomerative_interface.h">
+      <Filter>Tested Code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\interface\kmeans_interface.h">
+      <Filter>Tested Code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\interface\syncpr_interface.h">
+      <Filter>Tested Code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\interface\sync_interface.h">
+      <Filter>Tested Code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\antmean.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cluster\antmean_params.hpp">
+      <Filter>Tested Code\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\interface\legion_interface.h">
+      <Filter>Tested Code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\interface\kmedians_interface.h">
+      <Filter>Tested Code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\interface\kmedoids_interface.h">
+      <Filter>Tested Code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\interface\syncnet_interface.h">
+      <Filter>Tested Code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\interface\hsyncnet_interface.h">
+      <Filter>Tested Code\interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
