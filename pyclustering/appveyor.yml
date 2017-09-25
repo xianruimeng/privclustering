@@ -1,0 +1,28 @@
+version: '{build}'
+
+
+os:
+  - Visual Studio 2015
+
+
+platform:
+    - x64
+
+
+init: []
+
+
+environment:
+  PYTHON_VERSION: 3.4
+  CYGWIN_PATH: C:\cygwin64\bin\bash
+  MINICONDA_PATH: C:\Miniconda3-x64
+  matrix:
+  - CI_JOB: "BUILD_WINDOWS_CCORE"
+  - CI_JOB: "UT_WINDOWS_CCORE"
+  - CI_JOB: "BUILD_CYGWIN_CCORE"
+  - CI_JOB: "UT_CYGWIN_CCORE"
+  - CI_JOB: "PYCLUSTERING_WINDOWS"
+
+
+build_script:
+  - ps: ./ci/appveyor-ci.ps1
